@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#444444">
+  <title>さんむす杯抽選</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="select.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="select.js"></script>
+  <script src="roulette.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-img">
+      <img src="unnamed.webp" height="50px"/>
+    </div>
+    <div class="header-ctx">
+      さんむす杯本選抽選会
+    </div>
+    <div class="header-pod">
+      <select id="pod" class="select">
+        <option value="pod1" selected>Pod 1</option>
+        <option value="pod2">Pod 2</option>
+        <option value="pod3">Pod 3</option>
+      </select>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="target">
+      <div class="target-title">
+        現在抽選中
+      </div>
+      <div id="target" class="target-member">
+        -
+      </div>
+    </div>
+    <div id="result" class="result"></div>
+    <ul id="number" class="number"></ul>
+    <div class="button-grp">
+      <div class="wrapper-button">
+        <button id="button" class="button">START</button>
+      </div>
+      <div class="wrapper-button">
+        <button id="button-nxt" class="button next">NEXT</button>
+      </div>
+    </div>
+
+    <div class="group-table">
+      <div class="group">
+        <div class="group-title">
+          Group 1
+        </div>
+        <div id="roulette-result-1" class="group-member-list">
+          <div class="group-member pod1">-</div>
+          <div class="group-member pod2">-</div>
+          <div class="group-member pod3">-</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="group-title">
+          Group 2
+        </div>
+        <div id="roulette-result-2" class="group-member-list">
+          <div class="group-member pod1">-</div>
+          <div class="group-member pod2">-</div>
+          <div class="group-member pod3">-</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="group-title">
+          Group 3
+        </div>
+        <div id="roulette-result-3" class="group-member-list">
+          <div class="group-member pod1">-</div>
+          <div class="group-member pod2">-</div>
+          <div class="group-member pod3">-</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="group-title">
+          Group 4
+        </div>
+        <div id="roulette-result-4" class="group-member-list">
+          <div class="group-member pod1">-</div>
+          <div class="group-member pod2">-</div>
+          <div class="group-member pod3">-</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="group-title">
+          Group 5
+        </div>
+        <div id="roulette-result-5" class="group-member-list">
+          <div class="group-member pod1">-</div>
+          <div class="group-member pod2">-</div>
+          <div class="group-member pod3">-</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="group-title">
+          Group 6
+        </div>
+        <div id="roulette-result-6" class="group-member-list">
+          <div class="group-member pod1">-</div>
+          <div class="group-member pod2">-</div>
+          <div class="group-member pod3">-</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="group-title">
+          Seed
+        </div>
+        <div id="roulette-result-7" class="group-member-list last-child">
+          <div class="group-member pod1">-</div>
+          <div class="group-member pod2">-</div>
+          <div class="group-member pod3">-</div>
+        </div>
+      </div>
+    </div>
+
+    <audio id="sound-play" preload="auto">
+      <source src="start.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound-pause" preload="auto">
+      <source src="pause.mp3" type="audio/mp3">
+    </audio>
+  </div>
+</body>
+</html>

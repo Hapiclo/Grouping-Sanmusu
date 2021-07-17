@@ -1,0 +1,213 @@
+@import url(https://fonts.googleapis.com/css?family=Neucha);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+/*@import url(font-icomoon.css);*/
+@import url(https://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+/** Custom field plugin **/
+
+body {
+  background: #f2f2f2;
+  color: #186318;
+  font-family: arial, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  padding: 0 12px;
+}
+
+.header-img {
+  flex: 0 0 auto;
+  height: 50px;
+}
+
+.header-ctx {
+  flex: 1 1 auto;
+  height: 26px;
+  font-size: 24px;
+  line-height: 26px;
+  padding: 12px;
+}
+
+.header-pod {
+  flex: 0 0 auto;
+}
+
+.wrapper {
+  font-family: 'Neucha', cursive;
+  margin: 0 auto;
+}
+
+.target {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 50%;
+  margin: 36px auto;
+}
+
+.target-title {
+  background-color: #186318;
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #222;
+}
+
+.target-member {
+  background-color: #fff;
+  color: #186318;
+  font-size: 32px;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #222;
+}
+
+.result {
+  background-color: #fff;
+  align-items: center;
+  border: solid 1px #186318;
+  display: flex;
+  font-size: 130px;
+  font-weight: bold;
+  justify-content: center;
+  height: 200px;
+  margin: 0 auto 24px;
+  text-align: center;
+  width: 200px;
+}
+
+.number {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto 24px;
+  list-style: none;
+  padding: 0;
+  width: 1024px;
+}
+
+@media (max-width: 767px) {
+  .number {
+    width: 100%;
+  }
+}
+
+.number li {
+  background-color: #fff;
+  align-items: center;
+  border: solid 1px #186318;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  margin: 4px;
+  width: 100px;
+}
+
+.number li.hit {
+  background: #186318;
+  color: #fff;
+}
+
+.wrapper-button {
+  padding: 10px 0 50px;
+  text-align: center;
+}
+
+.button-grp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.button {
+  font-family: 'Neucha', cursive;
+  background: #186318;
+  border: dashed 1px #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #186318;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  height: 100px;
+  line-height: 100px;
+  overflow: hidden;
+  text-align: center;
+  transition: .4s;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.button.next {
+  box-shadow: 0 0 0 5px #222;
+  background: #222;
+}
+
+.button:hover {
+  background: #61ac61;
+  box-shadow: 0 0 0 5px #61ac61;
+  cursor: pointer;
+}
+
+.button.next:hover {
+  background: #626262;
+  box-shadow: 0 0 0 5px #626262;
+}
+
+.group-table {
+  width: 77%;
+  margin: 0 auto 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.group-title {
+  text-align: center;
+  background: #186318;
+  color: #fff;
+  border-top: 1px solid #222;
+  border-left: 1px solid #222;
+  border-bottom: 1px solid #222;
+  width: 150px;
+  padding: 12px;
+}
+
+.group-title:last {
+  border-right: 1px solid #222;
+}
+
+.group-member {
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #222;
+  border-right: none;
+  border-bottom: none;
+}
+
+.group-member-list.last-child .group-member {
+  border-right: 1px solid #222;
+}
+
+.group-member:last-child {
+  border-bottom: 1px solid #222;
+}
+
+footer {
+  text-align: center;
+}
